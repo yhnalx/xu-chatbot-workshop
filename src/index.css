@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* High-end cardstock or plastic panel with realistic depth */
+  .skeuo-panel {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  /* Deep inset for inputs or "depressed" areas */
+  .skeuo-inset {
+    background: #f0f0f0;
+    box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+  }
+
+  /* Tactile button with a "pop-out" effect */
+  .skeuo-button {
+    background: linear-gradient(145deg, #0d2747, #0b203a);
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    transition: all 0.2s ease;
+  }
+
+  .skeuo-button:active {
+    box-shadow: inset 5px 5px 10px #061220, inset -5px -5px 10px #123460;
+    transform: scale(0.98);
+  }
+
+  /* Silver metallic trim or embossed divider */
+  .skeuo-silver-trim {
+    background: linear-gradient(145deg, #b0b5b5, #8e9292);
+    box-shadow: 2px 2px 5px #7f8282, -2px -2px 5px #bdc2c2;
+  }
+
+  /* Frosted glass/Acrylic for chat area */
+  .skeuo-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(12, 35, 64, 0.1);
+  }
+
+  /* 3D pill for chat bubbles */
+  .skeuo-bubble-user {
+    background: linear-gradient(145deg, #0d2747, #0b203a);
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .skeuo-bubble-bot {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
